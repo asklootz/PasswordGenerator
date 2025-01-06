@@ -1,3 +1,4 @@
+using CrypticWizard;
 namespace PasswordGenerator
 {
     internal static class Program

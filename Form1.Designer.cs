@@ -30,11 +30,12 @@
         {
             GenButton = new Button();
             PasswordText = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // GenButton
             // 
-            GenButton.Location = new Point(334, 189);
+            GenButton.Location = new Point(62, 143);
             GenButton.Name = "GenButton";
             GenButton.Size = new Size(94, 29);
             GenButton.TabIndex = 0;
@@ -44,19 +45,30 @@
             // 
             // PasswordText
             // 
+            PasswordText.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             PasswordText.AutoSize = true;
-            PasswordText.Location = new Point(356, 143);
+            PasswordText.Location = new Point(141, 101);
             PasswordText.Name = "PasswordText";
-            PasswordText.Size = new Size(46, 20);
+            PasswordText.Size = new Size(0, 20);
             PasswordText.TabIndex = 1;
-            PasswordText.Text = "Temp";
+            PasswordText.TextAlign = ContentAlignment.MiddleCenter;
             PasswordText.Click += PasswordText_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(62, 101);
+            label1.Name = "label1";
+            label1.Size = new Size(73, 20);
+            label1.TabIndex = 2;
+            label1.Text = "Password:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(PasswordText);
             Controls.Add(GenButton);
             Name = "Form1";
@@ -69,5 +81,6 @@
 
         private Button GenButton;
         private Label PasswordText;
+        private Label label1;
     }
 }
